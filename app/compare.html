@@ -25,6 +25,43 @@
     <script src="js/myJs.js"></script>
 </head>
 <body>
+<div id="header-mobile">
+    <div class="container">
+        <div class="row menu-mb-col">
+            <div class="menu-mb-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="menu-mb-logo">
+                <a href="#">
+                    <img alt="TechOne" src="image/logo.png">
+                </a>
+            </div>
+            <div class="menu-mb-search">
+                <a href="">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+            <div class="menu-mb-login">
+                <a href="">
+                    <i class="fa fa-user-circle"></i>
+                </a>
+            </div>
+            <div class="menu-mb-compare">
+                <a href="">
+                    <i class="fas fa-exchange-alt"></i>
+                </a>
+            </div>
+            <div class="menu-mb-cart">
+                <a href="" class="cart">
+                    <span class="icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="count">1</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 <section id="header">
     <div class="header1">
         <div class="container">
@@ -44,22 +81,24 @@
     <div class="header2">
         <div class="container">
             <div class="row header2-content">
-                <div class="col-12 col-lg-2">
+                <div class="col-12 col-xl-2 text-center">
                     <div class="logo">
-                        <a href="/index.html">
+                        <a href="#">
                             <img alt="TechOne" src="image/logo.png">
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-5 mid">
+                <div class="col-12 col-lg-6 col-xl-5 mid">
                     <form action="">
                         <input type="text" placeholder="Search...">
-                        <button class="btn">Search</button>
+                        <button class="btn">
+                            <i class="fas fa-search"></i>
+                        </button>
                     </form>
                 </div>
-                <div class="col-12 col-md-6 col-lg-5">
+                <div class="col-12 col-lg-6 col-xl-5">
                     <div class="header2-control">
-                        <a class="compare" href="">
+                        <a class="compare" href="/compare.html">
                             <span class="icon">
                                 <i class="fas fa-exchange-alt"></i>
                             </span>
@@ -127,7 +166,7 @@
     <div id="header3" class="header3">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 header3-wrapper">
                     <ul class="header3-menu">
                         <li>
                             <a href="#">
@@ -159,58 +198,86 @@
                                 <span>Tin Tức</span>
                             </a>
                         </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="header4" class="header4">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 d-flex">
-                    <ul class="header3-menu">
-                        <li>
-                            <a href="#">
-                                <i class="fas fa-mobile-alt"></i>
-                                <span>Điện thoại</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fas fa-headphones"></i>
-                                <span>Phụ kiện</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fas fa-headphones"></i>
-                                <span>Dịch vụ</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fas fa-gift"></i>
-                                <span>Khuyến mãi</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fas fa-newspaper"></i>
-                                <span>Tin Tức</span>
-                            </a>
+                        <li class="header3-form">
+                            <form action="">
+                                <input type="text" placeholder="Bạn tìm gì...">
+                                <button class="btn"><i class="fas fa-search"></i></button>
+                            </form>
                         </li>
                     </ul>
-                    <div class="ml-auto header4-form">
-                        <form action="">
-                            <input type="text" placeholder="Search...">
-                            <button class="btn">Search</button>
-                        </form>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<!--<section id="compare-main">-->
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+            <!--<div class="col-12 compare-title text-center">-->
+                <!--So sánh điện thoại <span class="product-name">Nokia 8.1</span> và <span class="product-name">Samsung Galaxy A7 (2018)</span>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="row">-->
+            <!--<div class="col-12 compare-wrapper">-->
+                <!--<table class="table table-boder">-->
+                    <!--<thead>-->
+                        <!--<tr>-->
+                            <!--<th></th>-->
+                            <!--<th>-->
+                                <!--<a href="">-->
+                                    <!--<div class="product-image">-->
+                                        <!--<img src="image/nokia-81-blue-18thangbh-400x400.jpg" alt="">-->
+                                    <!--</div>-->
+                                    <!--<div class="product-name">-->
+                                        <!--Nokia 8.1-->
+                                    <!--</div>-->
+                                    <!--<div class="product-price">-->
+                                        <!--6.990.000dd-->
+                                    <!--</div>-->
+                                <!--</a>-->
+                                <!--<div class="rating">-->
+                                    <!--<div class="star-rating">-->
+                                        <!--<span style="width: 90%"></span>-->
+                                    <!--</div>-->
+                                    <!--<a href="" target="_blank">500 đánh giá</a>-->
+                                <!--</div>-->
+                            <!--</th>-->
+                            <!--<th>-->
+                                <!--<a href="">-->
+                                    <!--<div class="product-image">-->
+                                        <!--<img src="image/samsung-galaxy-a7-2018-blue-400x400.jpg" alt="">-->
+                                    <!--</div>-->
+                                    <!--<div class="product-name">-->
+                                        <!--Samsung Galaxy A7 (2018)-->
+                                    <!--</div>-->
+                                    <!--<div class="product-price">-->
+                                        <!--6.990.000dd-->
+                                    <!--</div>-->
+                                <!--</a>-->
+                                <!--<div class="rating">-->
+                                    <!--<div class="star-rating">-->
+                                        <!--<span style="width: 70%"></span>-->
+                                    <!--</div>-->
+                                    <!--<a href="" target="_blank">388 đánh giá</a>-->
+                                <!--</div>-->
+                            <!--</th>-->
+                        <!--</tr>-->
+                    <!--</thead>-->
+                    <!--<tbody>-->
+                        <!--<tr>-->
+                            <!--<td>-->
+                                <!--<div class="compare-subtitle">-->
+
+                                <!--</div>-->
+                            <!--</td>-->
+                        <!--</tr>-->
+                    <!--</tbody>-->
+                <!--</table>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
 
 <section id="compare-main">
     <div class="container">
@@ -220,62 +287,53 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 compare-wrapper">
-                <table class="table table-boder">
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>
-                                <a href="">
-                                    <div class="product-image">
-                                        <img src="image/nokia-81-blue-18thangbh-400x400.jpg" alt="">
-                                    </div>
-                                    <div class="product-name">
-                                        Nokia 8.1
-                                    </div>
-                                    <div class="product-price">
-                                        6.990.000dd
-                                    </div>
-                                </a>
-                                <div class="rating">
-                                    <div class="star-rating">
-                                        <span style="width: 90%"></span>
-                                    </div>
-                                    <a href="" target="_blank">500 đánh giá</a>
-                                </div>
-                            </th>
-                            <th>
-                                <a href="">
-                                    <div class="product-image">
-                                        <img src="image/samsung-galaxy-a7-2018-blue-400x400.jpg" alt="">
-                                    </div>
-                                    <div class="product-name">
-                                        Samsung Galaxy A7 (2018)
-                                    </div>
-                                    <div class="product-price">
-                                        6.990.000dd
-                                    </div>
-                                </a>
-                                <div class="rating">
-                                    <div class="star-rating">
-                                        <span style="width: 70%"></span>
-                                    </div>
-                                    <a href="" target="_blank">388 đánh giá</a>
-                                </div>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <div class="compare-subtitle">
-
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="col-4"></div>
+            <div class="col-4 product-image-wrapper">
+                <a href="">
+                    <div class="product-image">
+                        <img src="image/nokia-81-blue-18thangbh-400x400.jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Nokia 8.1
+                    </div>
+                    <div class="product-price">
+                        6.990.000dd
+                    </div>
+                </a>
+                <div class="rating">
+                    <div class="star-rating">
+                        <span style="width: 70%"></span>
+                    </div>
+                    <a href="" target="_blank">388 đánh giá</a>
+                </div>
             </div>
+            <div class="col-4 product-image-wrapper">
+                <a href="">
+                    <div class="product-image">
+                        <img src="image/samsung-galaxy-a7-2018-blue-400x400.jpg" alt="">
+                    </div>
+                    <div class="product-name">
+                        Samsung Galaxy A7 (2018)
+                    </div>
+                    <div class="product-price">
+                        6.990.000dd
+                    </div>
+                </a>
+                <div class="rating">
+                    <div class="star-rating">
+                        <span style="width: 70%"></span>
+                    </div>
+                    <a href="" target="_blank">388 đánh giá</a>
+                </div>
+            </div>
+        </div>
+        <div class="row product-feature-title">
+            CẤU HÌNH SẢN PHẨM
+        </div>
+        <div class="row">
+            <div class="col-4 feature-title">Màn hình:</div>
+            <div class="col-4 feature-content">IPS LCD, 6.3", Full HD+</div>
+            <div class="col-4 feature-content">IPS LCD, 6.35", HD+</div>
         </div>
     </div>
 </section>
