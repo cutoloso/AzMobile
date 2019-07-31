@@ -271,7 +271,7 @@ a:hover {
             -ms-transform: translate(0, 30px);
             transform: translate(0, 30px);
             opacity: 0;
-            display: none;
+            visibility: hidden;
 
             .minicart-content-wrapper {
               background-color: #fff;
@@ -386,24 +386,13 @@ a:hover {
                 }
               }
             }
-            &.show-mini-cart{
-              -webkit-transform: translate(0, 0);
-              -moz-transform: translate(0, 0);
-              -o-transform: translate(0, 0);
-              -ms-transform: translate(0, 0);
-              transform: translate(0, 0);
-              opacity: 1;
-            }
           }
 
-          //&:hover .mini-cart-content {
-          //  -webkit-transform: translate(0, 0);
-          //  -moz-transform: translate(0, 0);
-          //  -o-transform: translate(0, 0);
-          //  -ms-transform: translate(0, 0);
-          //  transform: translate(0, 0);
-          //  opacity: 1;
-          //}
+          &:hover .mini-cart-content{
+            transform: translate(0, 0);
+            opacity: 1;
+            visibility: visible;
+          }
         }
 
       }

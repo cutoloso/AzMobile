@@ -112,8 +112,8 @@ $(document).ready(function () {
         }
     }
     // Button cart
-    $('.cart-wrapper').mouseenter(function () {
-        $('.mini-cart-content').addClass('show-mini-cart');
+    $('.cart-wrapper').click(function () {
+        $('.mini-cart-content').toggleClass('show-mini-cart');
     });
 
     // Croll to top
