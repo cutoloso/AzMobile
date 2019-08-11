@@ -68,9 +68,10 @@ gulp.task('build',
 
 // Watchers
 gulp.task('watch', function() {
-  gulp.watch('app/scss/**/*.scss', gulp.series('scssTask'));
-  gulp.watch('app/*.html', browserSync.reload);
-  gulp.watch('app/js/**/*.js', browserSync.reload);
+  gulp.watch('app/scss/**/*.scss').on('change', gulp.series('scssTask'));
+  gulp.watch('app/*.html').on('change', browserSync.reload);
+  gulp.watch('app/css/responsive.css').on('change', browserSync.reload);
+  gulp.watch('app/js/**/*.js').on('change', browserSync.reload);
 })
 
 // Default task
