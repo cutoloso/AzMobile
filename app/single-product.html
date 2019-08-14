@@ -1,29 +1,27 @@
 <!doctype html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
-    <!--bootstrap-->
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Single product</title>
+  <!--bootstrap-->
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
 
-    <!--custom-->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-web.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="css/xzoom.css">
-    <link rel="stylesheet" href="css/fotorama.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+  <!--custom-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-web.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/xzoom.css">
+  <link rel="stylesheet" href="css/fotorama.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
 
 
 </head>
 <body>
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v4.0"></script>
 <div id="header-mobile">
     <div class="container">
         <div class="row menu-mb-col">
@@ -61,12 +59,13 @@
         </div>
     </div>
 </div>
+<div class="fix-mobile" style="width: 100%;"></div>
 <section id="header">
     <div class="header1">
         <div class="container">
             <div class="row header1-content">
                 <ul class="left">
-                    <li><a class="active" href="#">Home</a></li>
+                    <li><a class="active" href="index.html">Home</a></li>
                     <li><a href="#">About us</a></li>
                     <li><a href="#">Contact us</a></li>
                 </ul>
@@ -82,7 +81,7 @@
             <div class="row header2-content">
                 <div class="col-12 col-xl-2 text-center">
                     <div class="logo">
-                        <a href="#">
+                        <a href="index.html">
                             <img alt="TechOne" src="images/logo.png">
                         </a>
                     </div>
@@ -97,7 +96,7 @@
                 </div>
                 <div class="col-12 col-lg-6 col-xl-5">
                     <div class="header2-control">
-                        <a class="compare" href="/compare.html">
+                        <a class="compare" href="compare.html">
                             <span class="icon">
                                 <i class="fas fa-exchange-alt"></i>
                             </span>
@@ -106,7 +105,7 @@
                             </span>
                         </a>
                         <div class="cart-wrapper">
-                            <a href="" class="cart">
+                            <a href="cart.html" class="cart">
                                 <span class="icon">
                                     <i class="fas fa-shopping-cart"></i>
                                     <span class="count">1</span>
@@ -211,304 +210,739 @@
 </section>
 
 <section id="single-product">
-    <div class="container">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <ul class="breadcrumb">
+          <li>
+            <a href="index.html">Trang chủ</a>
+            <span>›</span>
+          </li>
+          <li>
+            <a href="#">Điện thoại</a>
+            <span>›</span>
+          </li>
+          <li class="active">
+            <a href="#">Nokia</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row product-info">
+      <div class="col-12">
+        <div class="product-title">
+          <div class="left">
+            <div class="product-name">
+              iPhone Xs Max 512GB
+            </div>
+            
+            <div class="star-rating">
+              <span class="star" style="width: 80%"></span>
+            </div>
+            <a href="#">424 đánh giá</a>
+          </div>
+          <div class="fb-plugin">
+            <div class="fb-like"
+            data-href="https://developers.facebook.com/docs/plugins/"
+            data-width="" data-layout="button_count"
+            data-action="like"
+            data-size="small" data-show-faces="false"
+            data-share="true">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-5 col-lg-5 product-image">
+      <div class="product-image">
+        <div class="xzoom-container">
+          <img class="xzoom3" id="xzoom-magnific"
+          src="images/iphone-xs-max-512gb-gold-600x600.jpg"
+          xoriginal="images/iphone-xs-max-512gb-gold-600x600.jpg"/>
+          <div class="xzoom-thumbs">
+            <a href="images/iphone-xs-max-512gb-gold-600x600.jpg">
+              <img class="xzoom-gallery3" 
+              src="images/iphone-xs-max-512gb-gold-600x600.jpg"
+              xpreview="images/iphone-xs-max-512gb-gold-600x600.jpg"
+              title="The description goes here">
+            </a>
+            <a href="https://picsum.photos/500/500/?random">
+              <img class="xzoom-gallery3" 
+              src="https://picsum.photos/500/500/?random"
+              title="The description goes here">
+            </a>
+            <button type="button" class="btn-viewall" data-toggle="modal"
+            data-target="#viewall">
+            <img class="img-viewall" 
+            src="images/iphone-xs-max-512gb-gold-600x600.jpg">
+            <div class="img-count">
+              Xem <br> 9 hình
+            </div>
+          </button>
+          <div class="modal fade" id="viewall">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+                <!-- Modal body -->
+                <!--Carousel Wrapper-->
+                <div class="fotorama"
+                data-max-width="100%"
+                data-nav="thumbs">>
+
+                <img src="images/iphone-xs-max-512gb-gold-600x600.jpg">
+                <img src="images/nokia-61-plus-3-400x460.png">
+                <img src="https://picsum.photos/600/600/?random">
+                <img src="https://picsum.photos/500/500/?random">
+                <img src="https://picsum.photos/500/500/?random">
+                <img src="https://picsum.photos/650/650/?random">
+              </div>
+
+              <!--/.Carousel Wrapper-->
+            </div>
+          </div>
+          <style>
+            .fotorama__arr__arr {
+              background: url('images/fotorama.png') no-repeat;
+            }
+          </style>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="col-12 col-md-7 col-lg-4 product-info">
+  <div class="summary-content">
+    <div class="price">
+      6.590.000₫
+    </div>
+    <div class="product-stock">
+      <div class="stock in-stock">
+        <span class="label">Trạng thái: </span>Còn hàng
+      </div>
+    </div>
+    <div class="discount">
+      <div class="title">KHUYẾN MÃI:</div>
+      <ul>
+        <li>
+          <i class="fas fa-check-circle"></i>
+          <span>Giảm thêm 5% (330.000₫) cho khách mua online có sinh nhật trong tháng 8</span>
+          <a href="">Xem chi tiết</a>
+        </li>
+        <li>
+          <i class="fas fa-check-circle"></i>
+          <span>Cơ hội trúng 200 học bổng tổng trị giá đến 2 tỷ đồng. </span>
+          <a href="">Xem chi tiết</a>
+        </li>
+      </ul>
+    </div>
+    <div class="btn-wrapper">
+      <a href="" class="buy-now btn">Mua ngay <br> <span>Giao hàng toàn quốc</span></a>
+      <a href="" class="add-cart btn">Thêm vào giỏ <br> <span>Ship COD</span></a>
+    </div>
+    <div class="callorder">
+      Gọi đặt mua: <a href="tel:1800xxxx">1800.xxxx</a> (miễn phí - 7:30-22:00)
+    </div>
+  </div>
+</div>
+<div class="col-12 col-lg-3 product-accessories">
+  <ul class="policy">
+    <li>
+      <i class="fas fa-box-open"></i>
+      <span>Trong hộp có: Sạc, Tai nghe, Cáp, Cây lấy sim</span>
+    </li>
+    <li>
+      <i class="fas fa-award"></i>
+      <span>Bảo hành chính hãng 18 tháng.</span>
+    </li>
+    <li>
+      <i class="fas fa-undo"></i>
+      <span>Lỗi là đổi mới trong 1 tháng</span>
+    </li>
+  </ul>
+</div>
+</div>
+<div class="row product-details">
+  <div class="col-12">
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#sumary">THÔNG TIN SẢN PHẨM</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#details">THÔNG SÔ KỸ THUẬT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#review">ĐÁNH GIÁ</a>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div id="sumary" class="container tab-pane active"><br>
+        <h3>Thiết kế mạnh mẽ, sang trọng</h3>
+        Chiếc điện thoại Nokia mới sở hữu cho mình lối thiết kế quen thuộc nhưng vẫn đậm chất của hãng trong sự kết hợp giữa khung kim loại cùng 2 mặt kính cao cấp.
+        Đi theo trào lưu mới nên việc được trang bị một chiếc tai thỏ ở không gian mặt trước sẽ là lựa chọn thông minh để thu hút người dùng.
+        Cảm giác cầm nắm mà Nokia 8.1 mang lại vẫn vô cùng chắc chắn và thoải mái nhờ máy được bo cong mềm mại ở các góc.
+        Một điểm nhấn nhẹ ở mặt lưng khi mà cụm camera kép, cảm biến vân tay và logo Nokia được bố trí thẳng hàng với nhau trông cực kì tinh tế.
+      </div>
+      <div id="details" class="container tab-pane fade"><br>
+        <div class="row product-feature-title">
+          CẤU HÌNH SẢN PHẨM
+        </div>
+        <div class="row">
+          <div class="col-6 feature-title">Màn hình:</div>
+          <div class="col-6 feature-content">IPS LCD, 6.3", Full HD+</div>
+        </div>
+        <div class="row">
+          <div class="col-6 feature-title">Hệ điều hành:</div>
+          <div class="col-6 feature-content">Android 9.0 (Pie)</div>
+        </div>
+        <div class="row">
+          <div class="col-6 feature-title">Camera sau:</div>
+          <div class="col-6 feature-content">Chính 12 MP & Phụ 13 MP</div>
+        </div>
+        <div class="row">
+          <div class="col-6 feature-title">Camera trước:</div>
+          <div class="col-6 feature-content">20 MP</div>
+        </div>
+        <div class="row">
+          <div class="col-6 feature-title">CPU:</div>
+          <div class="col-6 feature-content">Snapdragon 710 8 nhân 64-bit</div>
+        </div>
+        <div class="row">
+          <div class="col-6 feature-title">RAM:</div>
+          <div class="col-6 feature-content">4GB</div>
+        </div>
+        <div class="row">
+          <div class="col-6 feature-title">Bộ nhớ trong:</div>
+          <div class="col-6 feature-content">64GB</div>
+        </div>
+        <div class="row">
+          <div class="col-6 feature-title">Thẻ nhớ:</div>
+          <div class="col-6 feature-content">MicroSD, hỗ trợ tối đa 400 GB</div>
+        </div>
+        <div class="row">
+          <div class="col-6 feature-title">Thẻ SIM:</div>
+          <div class="col-6 feature-content">2 SIM Nano (SIM 2 chung khe thẻ nhớ), Hỗ trợ 4G</div>
+        </div>
+        <div class="row">
+          <div class="col-6 feature-title">Dung lượng pin:</div>
+          <div class="col-6 feature-content">3500 mAh, có sạc nhanh</div>
+        </div>
+        <div class="row product-feature-title">
+          MÀN HÌNH
+        </div>
+        <div class="row">
+          <div class="col-6 feature-title">Công nghệ màn hình</div>
+          <div class="col-6 feature-content">IPS LCD</div>
+        </div>
+        <div class="row">
+          <div class="col-6 feature-title">Độ phân giải</div>
+          <div class="col-6 feature-content">Full HD+ (1080 x 2280 Pixels)</div>
+        </div>
+        <div class="row">
+          <div class="col-6 feature-title">Màn hình rộng</div>
+          <div class="col-6 feature-content">6.18”</div>
+        </div>
+        <div class="row">
+          <div class="col-6 feature-title">Mặt kính cảm ứng</div>
+          <div class="col-6 feature-content">Kính cường lực Dinorex™ Glass</div>
+        </div>
+      </div>
+      <div id="review" class="container tab-pane fade"><br>
+        <div class="row review-summary">
+          <div class="col-6 col-md-4 rv-col-left">
+            <div class="title">
+              Đánh giá trung bình
+            </div>
+            <div class="total-point">4/5</div>
+            <div class="item-rating">
+              <div class="star-rating">
+                <span class="star" style="width: 80%"></span>
+              </div>
+              <p class="comments-count"><a href="">(23 nhận xét)</a></p>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 rv-col-mid">
+            <div class="item rate-5">
+              <span class="rating-num">5</span>
+              <div class="progress">
+                <div class="progress-bar bg-success" style="width: 57%;">
+                </div>
+              </div>
+              <span class="rating-num-total">57%</span>
+            </div>
+            <div class="item rate-4">
+              <span class="rating-num">4</span>
+              <div class="progress">
+                <div class="progress-bar bg-success" style="width: 40%;">
+                </div>
+              </div>
+              <span class="rating-num-total">40%</span>
+            </div>
+            <div class="item rate-3">
+              <span class="rating-num">3</span>
+              <div class="progress">
+                <div class="progress-bar bg-success" style="width: 28%;">
+                </div>
+              </div>
+              <span class="rating-num-total">28%</span>
+            </div>
+            <div class="item rate-2">
+              <span class="rating-num">2</span>
+              <div class="progress">
+                <div class="progress-bar bg-success" style="width: 10%;">
+                </div>
+              </div>
+              <span class="rating-num-total">10%</span>
+            </div>
+            <div class="item rate-1">
+              <span class="rating-num">1</span>
+              <div class="progress">
+                <div class="progress-bar bg-success" style="width: 1%;">
+                </div>
+              </div>
+              <span class="rating-num-total">1%</span>
+            </div>
+
+          </div>
+          <div class="col-12 col-md-4 rv-col-right">
+            <span>Chia sẻ nhận xét về sản phẩm</span>
+            <button type="button" class="btn btn-default js-customer-button" data-toggle="modal" data-target="#modal-alert">Viết nhận xét của bạn</button>
+          </div>
+        </div>
+        <div class="row review-customer">
+          <div class="col-12 title">
+            Gửi nhận xét của bạn
+          </div>
+          <div class="col-12">
+            <form action="" id="addReview" class="review-form" method="post">
+            <div class="form-group">
+              <label>1. Đánh giá của bạn về sản phẩm này:</label>
+              <div class="rating-input">
+                <i class="fas fa-star active" data-value="1"></i>
+                <i class="fas fa-star active" data-value="2"></i>
+                <i class="fas fa-star active" data-value="3"></i>
+                <i class="fas fa-star" data-value="4"></i>
+                <i class="fas fa-star" data-value="5"></i>
+                <input type="number" hidden name="rating_star" id="rating_star" data-clearable="xóa" class="rating hidden" data-min="1" data-max="5" data-bv-field="rating_star">
+              </div>
+              <small class="help-block text-danger">Please enter a valid number</small>
+              <small class="help-block text-danger">Vui lòng chọn đánh giá của bạn về sản phẩm này.</small>
+            </div>
+            <div class="form-group">
+              <label for="review_title">2. Tiêu đề của nhận xét:</label>
+              <input type="text" placeholder="Nhập tiêu đề nhận xét (không bắt buộc)" name="title" id="review_title" class="form-control input-sm">
+            </div>
+            <div class="form-group">
+              <label for="review_detail">3. Viết nhận xét của bạn vào bên dưới:</label>
+              <textarea placeholder="Nhận xét của bạn về sản phẩm này" class="form-control" name="detail" id="review_detail" cols="30" rows="10" data-bv-field="detail"></textarea>
+              <small class="help-block text-danger">Nội dung chứa ít nhất 50 ký tự</small>
+            </div>
+            <div class="action">
+              <button type="submit" class="btn btn-default btn-add-review ">Gửi nhận xét</button>
+            </div>
+          </form>
+          </div>
+        </div>
+        <div class="row review-all">
+          <div class="col-12 review-filter">
+            <span class="title">Chọn xem nhận xét</span>
+            <div class="btn-group dropdown">
+              <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                <span class="title">Hữu ích</span>
+                <span class="caret"></span>
+              </button>
+              <ul class="sort-list dropdown-menu" role="menu">
+                <li class="selected" data-parent-index="0" data-index="0">
+                  <a href="">Hữu ích</a>
+                </li>
+                <li class="" data-parent-index="0" data-index="1">
+                  <a href="">Mới nhất</a>
+                </li>
+              </ul>
+            </div>
+            <div class="btn-group dropdown">
+              <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                <span class="title">Tất cả sao</span>
+                <span class="caret"></span>
+              </button>
+              <ul class="sort-list dropdown-menu" role="menu">
+                <li class="selected" data-parent-index="2" data-index="0">
+                  <a href="#">Tất cả sao</a>
+                </li>
+                <li class="" data-parent-index="2" data-index="1">
+                  <a href="#">5 sao</a>
+                </li>
+                <li class="" data-parent-index="2" data-index="2">
+                  <a href="#">4 sao</a>
+                </li>
+                <li class="" data-parent-index="2" data-index="3">
+                  <a href="#">3 sao</a>
+                </li>
+                <li class="" data-parent-index="2" data-index="4">
+                  <a href="#">2 sao</a>
+                </li>
+                <li class="" data-parent-index="2" data-index="5">
+                  <a href="#">1 sao</a>
+                </li><li class="" data-parent-index="2" data-index="6">
+                  <a href="#">Hài lòng</a>
+                </li>
+                <li class="" data-parent-index="2" data-index="7">
+                  <a href="#">Chưa hài lòng</a>
+              </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 review-list">
+            <div class="review-item">
+              <div class="reviewer-avatar">
+                <div class="img">
+                  <i class="fas fa-user-circle"></i>
+                </div>
+                <p class="name">NGUYỄN LÊ MINH ANH</p>
+                <p class="date">4 tháng trước</p>
+              </div>
+              <div class="reviewer-content">
+                <div class="info">
+                  <div class="star-rating">
+                    <span class="star" style="width: 80%"></span>
+                  </div>
+                  <span class="review-title">
+                    Thiết kế đẹp, khả năng quay phim chụp ảnh quá thích
+                  </span>
+                  <div class="description">
+                    <span>
+                      Mình cực kỳ hài lòng và ưng ý khi mua được em máy đỉnh này với giá chưa đến 7tr. Thiết kế rất đẹp, mặt trước và đặc biệt mặt sau bằng kính cực đẹp luôn. 
+                      Em này 2 sim hoặc có thể thay bằng thẻ nhớ ngoài nên mình có thể vô tư quay phim, chụp ảnh mà ko lo về dung lượng. 
+                      Pin khá trâu, mình sử dụng để lướt web, coi ảnh mà có thể sử dụng tầm 1-1.5 ngày. Mình có dùng để coi youtube tầm 2 tiếng thì cũng chỉ bị tụt tầm 10%pin.
+                      Quay phim nét, chụp ảnh đẹp, trong đây có tấm mình chụp bằng em này, nói chung là quá thích. Có điều khi chụp ảnh bằng app khác thì có vẻ chất lượng hơi bị ảnh hưởng chút.
+                      Kính cường lực tặng kèm thì khá dở, mình ko hề làm rơi lần nào vậy mà kính dán cứ bị nứt và vỡ. Vậy nên mình cũng tự mua kèm kính cường lực và case điện thoại, cũng ở trên tiki luôn.
+                    </span>
+                  </div>
+                  <div class="review-action">
+                      <span class="show-quick-reply js-quick-reply">Gửi trả lời</span>
+                    </div>
+                  <div class="quick-reply" style="display: b;">
+                    <textarea class="form-control review_comment" placeholder="Nhập nội dung trả lời tại đây. Tối đa 1500 từ" id=""></textarea>
+                    <span class="help-block text-left"></span>
+                    <button type="button" class="btn btn-primary btn-add-comment" data-review-id="2335646">Gửi trả lời của bạn</button>
+                    <button type="button" class="btn btn-default js-quick-reply-hide">Hủy bỏ</button>
+                  </div>
+                  <div class="reply">
+                    <div class="reply-item">
+                      <p class="reply-avatar">
+                        <i class="fas fa-user-circle"></i>
+                      </p>
+                      <p class="reply-name">Duong Thu</p>
+                      <p class="reply-content">
+                        <span>op lung nay bạn mua loại nào vậy. có thể cho mình link được không</span>
+                      </p>
+                    </div>
+                    <div class="reply-item">
+                      <p class="reply-avatar">
+                        <i class="fas fa-user-circle"></i>
+                      </p>
+                      <p class="reply-name">Duong Thu</p>
+                      <p class="reply-content">
+                        <span>op lung nay bạn mua loại nào vậy. có thể cho mình link được không</span>
+                      </p>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="review-item">
+              <div class="reviewer-avatar">
+                <div class="img">
+                  <i class="fas fa-user-circle"></i>
+                </div>
+                <p class="name">NGUYỄN LÊ MINH ANH</p>
+                <p class="date">4 tháng trước</p>
+              </div>
+              <div class="reviewer-content">
+                <div class="info">
+                  <div class="star-rating">
+                    <span class="star" style="width: 80%"></span>
+                  </div>
+                  <span class="review-title">
+                    Thiết kế đẹp, khả năng quay phim chụp ảnh quá thích
+                  </span>
+                  <div class="description">
+                    <span>
+                      Mình cực kỳ hài lòng và ưng ý khi mua được em máy đỉnh này với giá chưa đến 7tr. Thiết kế rất đẹp, mặt trước và đặc biệt mặt sau bằng kính cực đẹp luôn. 
+                      Em này 2 sim hoặc có thể thay bằng thẻ nhớ ngoài nên mình có thể vô tư quay phim, chụp ảnh mà ko lo về dung lượng. 
+                      Pin khá trâu, mình sử dụng để lướt web, coi ảnh mà có thể sử dụng tầm 1-1.5 ngày. Mình có dùng để coi youtube tầm 2 tiếng thì cũng chỉ bị tụt tầm 10%pin.
+                      Quay phim nét, chụp ảnh đẹp, trong đây có tấm mình chụp bằng em này, nói chung là quá thích. Có điều khi chụp ảnh bằng app khác thì có vẻ chất lượng hơi bị ảnh hưởng chút.
+                      Kính cường lực tặng kèm thì khá dở, mình ko hề làm rơi lần nào vậy mà kính dán cứ bị nứt và vỡ. Vậy nên mình cũng tự mua kèm kính cường lực và case điện thoại, cũng ở trên tiki luôn.
+                    </span>
+                  </div>
+                  <div class="review-action">
+                    <span class="show-quick-reply js-quick-reply">Gửi trả lời</span>
+                  </div>
+                  <div class="quick-reply" style="display: b;">
+                    <textarea class="form-control review_comment" placeholder="Nhập nội dung trả lời tại đây. Tối đa 1500 từ" id=""></textarea>
+                    <span class="help-block text-left"></span>
+                    <button type="button" class="btn btn-primary btn-add-comment" data-review-id="2335646">Gửi trả lời của bạn</button>
+                    <button type="button" class="btn btn-default js-quick-reply-hide">Hủy bỏ</button>
+                  </div>
+                  <div class="reply">
+                    <div class="reply-item">
+                      <p class="reply-avatar">
+                        <i class="fas fa-user-circle"></i>
+                      </p>
+                      <p class="reply-name">Duong Thu</p>
+                      <p class="reply-content">
+                        <span>op lung nay bạn mua loại nào vậy. có thể cho mình link được không</span>
+                      </p>
+                    </div>
+                    <div class="reply-item">
+                      <p class="reply-avatar">
+                        <i class="fas fa-user-circle"></i>
+                      </p>
+                      <p class="reply-name">Duong Thu</p>
+                      <p class="reply-content">
+                        <span>op lung nay bạn mua loại nào vậy. có thể cho mình link được không</span>
+                      </p>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<section id="product-related" class="product-outer">
+    <div class="container  product-wrapper">
         <div class="row">
             <div class="col-12">
-                <ul class="breadcrumb">
-                    <li>
-                        <a href="index.html">Trang chủ</a>
-                        <span>›</span>
-                    </li>
-                    <li>
-                        <a href="#">Điện thoại</a>
-                        <span>›</span>
-                    </li>
-                    <li class="active">
-                        <a href="#">Nokia</a>
-                    </li>
-                </ul>
+                <div class="head">
+                    <div class="title">
+                        Sản phẩm liên quan
+                    </div>
+                    
+                </div>
             </div>
         </div>
-        <div class="row product-info">
+        <div class="row  product-wrapper">
             <div class="col-12">
-                <div class="product-title">
-                    <div class="left">
-                        <div class="product-name">
-                            iPhone Xs Max 512GB
-                        </div>
-                        <div class="product-rating">
-                            <span class="star" style="width: 80%"></span> <a href="#">424 đánh giá</a>
-                        </div>
-                    </div>
-                    <div class="fb-plugin">
-                        <div class="fb-like"
-                             data-href="https://developers.facebook.com/docs/plugins/"
-                             data-width="" data-layout="button_count"
-                             data-action="like"
-                             data-size="small" data-show-faces="false"
-                             data-share="true">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-5 col-md-5 col-lg-5 product-image">
-                <div class="product-image">
-                    <div class="xzoom-container">
-                        <img class="xzoom3" id="xzoom-magnific"
-                             src="images/iphone-xs-max-512gb-gold-600x600.jpg"
-                             xoriginal="images/iphone-xs-max-512gb-gold-600x600.jpg"/>
-                        <div class="xzoom-thumbs">
-                            <a href="images/iphone-xs-max-512gb-gold-600x600.jpg">
-                                <img class="xzoom-gallery3" width="80"
-                                     src="images/iphone-xs-max-512gb-gold-600x600.jpg"
-                                     xpreview="images/iphone-xs-max-512gb-gold-600x600.jpg"
-                                     title="The description goes here">
-                            </a>
-                            <a href="https://picsum.photos/500/500/?random">
-                                <img class="xzoom-gallery3" width="80"
-                                     src="https://picsum.photos/500/500/?random"
-                                     title="The description goes here">
-                            </a>
-                            <button type="button" class="btn-viewall" data-toggle="modal"
-                                    data-target="#viewall">
-                                <img class="img-viewall" width="80"
-                                     src="images/iphone-xs-max-512gb-gold-600x600.jpg">
-                                <div class="img-count">
-                                    Xem <br> 9 hình
+                <div class="list-product owl-carousel">
+                    <div class="product-item">
+                        <div class="product-inner">
+                            <div class="product-thumb">
+                                <div class="thumb-inner">
+                                    <a class="thumb-link" href="single-product.html">
+                                        <img src="images/iphone-xs-max-512gb-gold-400x460.png" alt="">
+                                    </a>
                                 </div>
-                            </button>
-                            <div class="modal fade" id="viewall">
-                                <div class="modal-dialog modal-lg modal-dialog-centered">
-                                    <div class="modal-content">
-                                        <!-- Modal body -->
-                                        <!--Carousel Wrapper-->
-                                        <div class="fotorama"
-                                             data-max-width="100%"
-                                             data-nav="thumbs">>
-
-                                            <img src="images/iphone-xs-max-512gb-gold-600x600.jpg">
-                                            <img src="images/nokia-61-plus-3-400x460.png">
-                                            <img src="https://picsum.photos/600/600/?random">
-                                            <img src="https://picsum.photos/500/500/?random">
-                                            <img src="https://picsum.photos/500/500/?random">
-                                            <img src="https://picsum.photos/650/650/?random">
-                                        </div>
-
-                                        <!--/.Carousel Wrapper-->
+                                <div class="group-button-mobile">
+                                            <a href="#" class="add-cart">Thêm vào giỏ</a>
+                                            <a href="#" class="compare">
+                                                <i class="fas fa-exchange-alt"></i>
+                                            </a>
+                                            <a href="#" class="add_wishlist">
+                                                <i class="far fa-heart"></i>
+                                            </a>
                                     </div>
-                                </div>
-                                <style>
-                                    .fotorama__arr__arr {
-                                        background: url('images/fotorama.png') no-repeat;
-                                    }
-                                </style>
                             </div>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-sm-4 col-md-4 col-lg-4 product-info">
-                <div class="summary-content">
-                    <div class="price">
-                        6.590.000₫
-                    </div>
-                    <div class="product-stock">
-                        <div class="stock in-stock">
-                            <span class="label">Trạng thái: </span>Còn hàng
-                        </div>
-                    </div>
-                    <div class="discount">
-                        <div class="title">KHUYẾN MÃI:</div>
-                        <ul>
-                            <li>
-                                <i class="fas fa-check-circle"></i>
-                                <span>Giảm thêm 5% (330.000₫) cho khách mua online có sinh nhật trong tháng 8</span>
-                                <a href="">Xem chi tiết</a>
-                            </li>
-                            <li>
-                                <i class="fas fa-check-circle"></i>
-                                <span>Cơ hội trúng 200 học bổng tổng trị giá đến 2 tỷ đồng. </span>
-                                <a href="">Xem chi tiết</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="btn-wrapper">
-                        <a href="" class="buy-now btn">Mua ngay <br> <span>Giao hàng toàn quốc</span></a>
-                        <a href="" class="add-cart btn">Thêm vào giỏ <br> <span>Ship COD</span></a>
-                    </div>
-                    <div class="callorder">
-                        Gọi đặt mua: <a href="tel:1800xxxx">1800.xxxx</a> (miễn phí - 7:30-22:00)
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3 col-md-3 product-accessories">
-                <ul class="policy">
-                    <li>
-                        <i class="fas fa-box-open"></i>
-                        <span>Trong hộp có: Sạc, Tai nghe, Cáp, Cây lấy sim</span>
-                    </li>
-                    <li>
-                        <i class="fas fa-award"></i>
-                        <span>Bảo hành chính hãng 18 tháng.</span>
-                    </li>
-                    <li>
-                        <i class="fas fa-undo"></i>
-                        <span>Lỗi là đổi mới trong 1 tháng</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="product-details">
-            <div class="col-12">
-
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#sumary">THÔNG TIN SẢN PHẨM</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#details">THÔNG SÓ KỸ THUẬT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#review">ĐÁNH GIÁ</a>
-                    </li>
-                </ul>
-
-                <!-- Tab panes -->
-                <div class="tab-content">
-                    <div id="sumary" class="container tab-pane active"><br>
-                        <h3>Thiết kế mạnh mẽ, sang trọng</h3>
-                        Chiếc điện thoại Nokia mới sở hữu cho mình lối thiết kế quen thuộc nhưng vẫn đậm chất của hãng trong sự kết hợp giữa khung kim loại cùng 2 mặt kính cao cấp.
-                        Đi theo trào lưu mới nên việc được trang bị một chiếc tai thỏ ở không gian mặt trước sẽ là lựa chọn thông minh để thu hút người dùng.
-                        Cảm giác cầm nắm mà Nokia 8.1 mang lại vẫn vô cùng chắc chắn và thoải mái nhờ máy được bo cong mềm mại ở các góc.
-                        Một điểm nhấn nhẹ ở mặt lưng khi mà cụm camera kép, cảm biến vân tay và logo Nokia được bố trí thẳng hàng với nhau trông cực kì tinh tế.
-                    </div>
-                    <div id="details" class="container tab-pane fade"><br>
-                        <div class="row product-feature-title">
-                            CẤU HÌNH SẢN PHẨM
-                        </div>
-                        <div class="row">
-                            <div class="col-6 feature-title">Màn hình:</div>
-                            <div class="col-6 feature-content">IPS LCD, 6.3", Full HD+</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6 feature-title">Hệ điều hành:</div>
-                            <div class="col-6 feature-content">Android 9.0 (Pie)</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6 feature-title">Camera sau:</div>
-                            <div class="col-6 feature-content">Chính 12 MP & Phụ 13 MP</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6 feature-title">Camera trước:</div>
-                            <div class="col-6 feature-content">20 MP</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6 feature-title">CPU:</div>
-                            <div class="col-6 feature-content">Snapdragon 710 8 nhân 64-bit</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6 feature-title">RAM:</div>
-                            <div class="col-6 feature-content">4GB</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6 feature-title">Bộ nhớ trong:</div>
-                            <div class="col-6 feature-content">64GB</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6 feature-title">Thẻ nhớ:</div>
-                            <div class="col-6 feature-content">MicroSD, hỗ trợ tối đa 400 GB</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6 feature-title">Thẻ SIM:</div>
-                            <div class="col-6 feature-content">2 SIM Nano (SIM 2 chung khe thẻ nhớ), Hỗ trợ 4G</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6 feature-title">Dung lượng pin:</div>
-                            <div class="col-6 feature-content">3500 mAh, có sạc nhanh</div>
-                        </div>
-                        <div class="row product-feature-title">
-                            MÀN HÌNH
-                        </div>
-                        <div class="row">
-                            <div class="col-6 feature-title">Công nghệ màn hình</div>
-                            <div class="col-6 feature-content">IPS LCD</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6 feature-title">Độ phân giải</div>
-                            <div class="col-6 feature-content">Full HD+ (1080 x 2280 Pixels)</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6 feature-title">Màn hình rộng</div>
-                            <div class="col-6 feature-content">6.18”</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6 feature-title">Mặt kính cảm ứng</div>
-                            <div class="col-6 feature-content">Kính cường lực Dinorex™ Glass</div>
-                        </div>
-                    </div>
-                    <div id="review" class="container tab-pane fade"><br>
-                        <div class="row review-wrapper">
-                            <div class="col-4 col-1">
-                                <div class="title">
-                                    Đánh giá trung bình
+                            <div class="product-info">
+                                <div class="star-rating">
+                                    <span class="star" style="width: 80%"></span>
                                 </div>
-                                <div class="total-point">4/5</div>
-                                <div class="item-rating">
-                                    <div class="product-rating">
-                                        <span class="star" style="width: 80%"></span>
+                                <div class="product-name">
+                                    <a href="">iPhone Xs Max 512GB</a>
+                                </div>
+                                <div class="product-price">
+                                    39.990.000₫
+                                </div>
+                                <div class="group-button">
+                                    <div class="inner">
+                                        <a href="#" class="add-cart">Thêm vào giỏ</a>
+                                        <a href="#" class="compare">
+                                            <i class="fas fa-exchange-alt"></i>
+                                        </a>
+                                        <a href="#" class="add_wishlist">
+                                            <i class="far fa-heart"></i>
+                                        </a>
                                     </div>
-                                    <p class="comments-count"><a href="">(23 nhận xét)</a></p>
                                 </div>
                             </div>
-                            <div class="col-4 col-2">
-                                <div class="item rate-5">
-                                    <span class="rating-num">5</span>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-success" style="width: 57%;">
-                                        </div>
-                                    </div>
-                                    <span class="rating-num-total">57%</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-inner">
+                            <div class="product-thumb">
+                                <div class="thumb-inner">
+                                    <a class="thumb-link" href="single-product.html">
+                                        <img src="images/samsung-galaxy-s10-plus-512gb-ceramic-black-400x460.png" alt="">
+                                    </a>
                                 </div>
-                                <div class="item rate-4">
-                                    <span class="rating-num">4</span>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-success" style="width: 40%;">
-                                        </div>
+                                <div class="group-button-mobile">
+                                            <a href="#" class="add-cart">Thêm vào giỏ</a>
+                                            <a href="#" class="compare">
+                                                <i class="fas fa-exchange-alt"></i>
+                                            </a>
+                                            <a href="#" class="add_wishlist">
+                                                <i class="far fa-heart"></i>
+                                            </a>
                                     </div>
-                                    <span class="rating-num-total">40%</span>
-                                </div>
-                                <div class="item rate-3">
-                                    <span class="rating-num">3</span>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-success" style="width: 28%;">
-                                        </div>
-                                    </div>
-                                    <span class="rating-num-total">28%</span>
-                                </div>
-                                <div class="item rate-2">
-                                    <span class="rating-num">2</span>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-success" style="width: 10%;">
-                                        </div>
-                                    </div>
-                                    <span class="rating-num-total">10%</span>
-                                </div>
-                                <div class="item rate-1">
-                                    <span class="rating-num">1</span>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-success" style="width: 1%;">
-                                        </div>
-                                    </div>
-                                    <span class="rating-num-total">1%</span>
-                                </div>
-
                             </div>
-                            <div class="col-4 col-3">
-                                <span>Chia sẻ nhận xét về sản phẩm</span>
-                                <button type="button" class="btn btn-default js-customer-button">Viết nhận xét của bạn</button>
+                            <div class="product-info">
+                                <div class="star-rating">
+                                    <span class="star" style="width: 80%"></span>
+                                </div>
+                                <div class="product-name">
+                                    <a href="">Samsung Galaxy S10+ (512GB)</a>
+                                </div>
+                                <div class="product-price">
+                                    28.990.000₫
+                                </div>
+                                <div class="group-button">
+                                    <div class="inner">
+                                        <a href="#" class="add-cart">Thêm vào giỏ</a>
+                                        <a href="#" class="compare">
+                                            <i class="fas fa-exchange-alt"></i>
+                                        </a>
+                                        <a href="#" class="add_wishlist">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-inner">
+                            <div class="product-thumb">
+                                <div class="thumb-inner">
+                                    <a class="thumb-link" href="single-product.html">
+                                        <img src="images/nokia-81-blue-18thangbh-400x460.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="group-button-mobile">
+                                            <a href="#" class="add-cart">Thêm vào giỏ</a>
+                                            <a href="#" class="compare">
+                                                <i class="fas fa-exchange-alt"></i>
+                                            </a>
+                                            <a href="#" class="add_wishlist">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                    </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="star-rating">
+                                    <span class="star" style="width: 80%"></span>
+                                </div>
+                                <div class="product-name">
+                                    <a href="">Nokia 8.1</a>
+                                </div>
+                                <div class="product-price">
+                                    6.990.000₫
+                                </div>
+                                <div class="group-button">
+                                    <div class="inner">
+                                        <a href="#" class="add-cart">Thêm vào giỏ</a>
+                                        <a href="#" class="compare">
+                                            <i class="fas fa-exchange-alt"></i>
+                                        </a>
+                                        <a href="#" class="add_wishlist">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-inner">
+                            <div class="product-thumb">
+                                <div class="thumb-inner">
+                                    <a class="thumb-link" href="single-product.html">
+                                        <img src="images/iphone-xs-max-256gb-white-400x460.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="group-button-mobile">
+                                            <a href="#" class="add-cart">Thêm vào giỏ</a>
+                                            <a href="#" class="compare">
+                                                <i class="fas fa-exchange-alt"></i>
+                                            </a>
+                                            <a href="#" class="add_wishlist">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                    </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="star-rating">
+                                    <span class="star" style="width: 80%"></span>
+                                </div>
+                                <div class="product-name">
+                                    <a href="">iPhone Xs Max 512GB</a>
+                                </div>
+                                <div class="product-price">
+                                    35.990.000₫
+                                </div>
+                                <div class="group-button">
+                                    <div class="inner">
+                                        <a href="#" class="add-cart">Thêm vào giỏ</a>
+                                        <a href="#" class="compare">
+                                            <i class="fas fa-exchange-alt"></i>
+                                        </a>
+                                        <a href="#" class="add_wishlist">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-inner">
+                            <div class="product-thumb">
+                                <div class="thumb-inner">
+                                    <a class="thumb-link" href="single-product.html">
+                                        <img src="images/nokia-61-plus-3-400x460.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="group-button-mobile">
+                                            <a href="#" class="add-cart">Thêm vào giỏ</a>
+                                            <a href="#" class="compare">
+                                                <i class="fas fa-exchange-alt"></i>
+                                            </a>
+                                            <a href="#" class="add_wishlist">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                    </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="star-rating">
+                                    <span class="star" style="width: 80%"></span>
+                                </div>
+                                <div class="product-name">
+                                    <a href="">Nokia 6.1 Plus</a>
+                                </div>
+                                <div class="product-price">
+                                    4.990.000₫
+                                </div>
+                                <div class="group-button">
+                                    <div class="inner">
+                                        <a href="#" class="add-cart">Thêm vào giỏ</a>
+                                        <a href="#" class="compare">
+                                            <i class="fas fa-exchange-alt"></i>
+                                        </a>
+                                        <a href="#" class="add_wishlist">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -517,125 +951,122 @@
         </div>
     </div>
 </section>
-<div class="modal fade" id="viewgall2">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="xzoom-container">
-                <img class="xzoom3" id="xzoom-magnific2" src="images/iphone-xs-max-512gb-gold-600x600.jpg"
-                     xoriginal="images/iphone-xs-max-512gb-gold-600x600.jpg"/>
-                <div class="xzoom-thumbs">
-                    <a href="images/iphone-xs-max-512gb-gold-600x600.jpg">
-                        <img class="xzoom-gallery3" width="80" src="images/iphone-xs-max-512gb-gold-600x600.jpg"
-                             xpreview="images/iphone-xs-max-512gb-gold-600x600.jpg" title="The description goes here">
-                    </a>
-                    <a href="https://picsum.photos/700/700/?random">
-                        <img class="xzoom-gallery3" width="80" src="https://picsum.photos/700/700/?random"
-                             title="The description goes here">
-                    </a>
-                    <a href="images/samsung-galaxy-a7-2018-blue-400x400.jpg">
-                        <img class="xzoom-gallery3" width="80" src="images/samsung-galaxy-a7-2018-blue-400x400.jpg"
-                             title="The description goes here">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 <section id="footer">
-    <div class="container">
-        <div class="row footer-top">
-            <div class="col-6 col-md-6 col-lg-3">
-                <div class="footer-col">
-                    <div class="title">
-                        Thông tin liên lạc
-                    </div>
-                    <ul class="content">
-                        <li>218 Fifth Avenue, HeavenTower
-                            NewYork City
-                        </li>
-                        <li>(+68) 123 456 7890</li>
+  <div class="container">
+    <div class="row footer-top">
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="footer-col">
+          <div class="title">
+            Thông tin liên lạc
+          </div>
+          <ul class="content">
+            <li>218 Fifth Avenue, HeavenTower
+              NewYork City
+            </li>
+            <li>(+68) 123 456 7890</li>
 
 
-                    </ul>
-                    <div class="form-subcribe">
-                        <div class="title-form">Đăng ký để nhận tin tức về sản phẩm và khuyến mãi</div>
-                        <form action="">
-                            <input type="text" placeholder="Email">
-                            <a href="#" class="btn btn-subscribe">Đăng ký</a>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-md-5 offset-md-1 col-lg-3 offset-lg-0">
-                <div class="footer-col">
-                    <div class="title">
-                        Thông tin
-                    </div>
-                    <ul class="content">
-                        <li><a href="#">Giới thiệu công ty</a></li>
-                        <li><a href="#">Tuyển dụng</a></li>
-                        <li><a href="#">Gửi góp ý, khiếu nại</a></li>
-                        <li><a href="#">Xem vị trí cửa hàng</a></li>
-                        <li><a href="#">Trợ giúp</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-6 col-md-6 col-lg-3">
-                <div class="footer-col">
-                    <div class="title">
-                        Hỗ trợ tư vấn
-                    </div>
-                    <ul class="content">
-                        <li>Hỗ trợ kỹ thuật: <span>1800.1060 (7:30 - 22:00)</span></li>
-                        <li>Hỗ trợ tư vấn: <span> 1800.1062 (8:00 - 21:30)</span></li>
-                        <li>Gọi bảo hành: <span>1800.1064 (8:00 - 21:00)</span></li>
-
-                    </ul>
-                </div>
-            </div>
-            <div class="col-6 col-md-5 offset-md-1 col-lg-3 offset-lg-0">
-                <div class="footer-col">
-                    <div class="title">
-                        Hỗ trợ tư vấn
-                    </div>
-                    <ul class="content">
-                        <li>Hỗ trợ khách hàng: <span>Support@techone.com</span></li>
-                        <li>Báo lỗi bảo mật: <span>security@techone.vn</span></li>
-                    </ul>
-                </div>
-            </div>
+          </ul>
+          <div class="form-subcribe">
+            <div class="title-form">Đăng ký để nhận tin tức về sản phẩm và khuyến mãi</div>
+            <form action="">
+              <input type="text" placeholder="Email">
+              <a href="#" class="btn btn-subscribe">Đăng ký</a>
+            </form>
+          </div>
         </div>
-        <div class="row">
-            <div class="col-12 footer-bottom">
-                <div class="footer-bottom-copyright">
-                    © Copyright TechOne. All Rights Reserved.
-                </div>
-                <div class="footer-bottom-social">
-                    <a href="#">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-google-plus-g"></i>
-                    </a>
-                </div>
-                <div class="footer-bottom-brand">
-                    <img src="images/visa.svg" alt="">
-                    <img src="images/mastercard.svg" alt="">
-                    <img src="images/american.png" alt="">
-                    <img src="images/jcb.svg" alt="">
-                </div>
-            </div>
+      </div>
+      <div class="col-6 col-md-5 offset-md-1 col-lg-3 offset-lg-0">
+        <div class="footer-col">
+          <div class="title">
+            Thông tin
+          </div>
+          <ul class="content">
+            <li><a href="#">Giới thiệu công ty</a></li>
+            <li><a href="#">Tuyển dụng</a></li>
+            <li><a href="#">Gửi góp ý, khiếu nại</a></li>
+            <li><a href="#">Xem vị trí cửa hàng</a></li>
+            <li><a href="#">Trợ giúp</a></li>
+          </ul>
         </div>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="footer-col">
+          <div class="title">
+            Hỗ trợ tư vấn
+          </div>
+          <ul class="content">
+            <li>Hỗ trợ kỹ thuật: <span>1800.1060 (7:30 - 22:00)</span></li>
+            <li>Hỗ trợ tư vấn: <span> 1800.1062 (8:00 - 21:30)</span></li>
+            <li>Gọi bảo hành: <span>1800.1064 (8:00 - 21:00)</span></li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-6 col-md-5 offset-md-1 col-lg-3 offset-lg-0">
+        <div class="footer-col">
+          <div class="title">
+            Hỗ trợ tư vấn
+          </div>
+          <ul class="content">
+            <li>Hỗ trợ khách hàng: <span>Support@techone.com</span></li>
+            <li>Báo lỗi bảo mật: <span>security@techone.vn</span></li>
+          </ul>
+        </div>
+      </div>
     </div>
+    <div class="row">
+      <div class="col-12 footer-bottom">
+        <div class="footer-bottom-copyright">
+          © Copyright TechOne. All Rights Reserved.
+        </div>
+        <div class="footer-bottom-social">
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-google-plus-g"></i>
+          </a>
+        </div>
+        <div class="footer-bottom-brand">
+          <img src="images/visa.svg" alt="">
+          <img src="images/mastercard.svg" alt="">
+          <img src="images/american.png" alt="">
+          <img src="images/jcb.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <div id="backtotop" class="backtotop show">
-    <i class="fas fa-chevron-up"></i>
+  <i class="fas fa-chevron-up"></i>
 </div>
+<!-- The Modal Alert login-->
+<div class="modal" id="modal-alert">
+  <div class="modal-dialog">
+    <div class="modal-content">
 
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Bạn cần login để sử dụng chức năng này.</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- plugin fb -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v4.0"></script>
 </body>
 </html>
 <!--bootstrap-->

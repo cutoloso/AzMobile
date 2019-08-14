@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    //home page
+
     $('.slider-content').owlCarousel({
         loop: true,
         margin: 0,
@@ -28,16 +30,16 @@ $(document).ready(function () {
             0: {
                 items: 1,
             },
-            480: {
+            424: {
                 items: 2,
             },
-            768: {
+            767: {
                 items: 3,
             },
-            992: {
+            991: {
                 items: 4,
             },
-            1200: {
+            1199: {
                 items: 5,
             }
         }
@@ -164,7 +166,20 @@ $(document).ready(function () {
         $(this).addClass('design-tag-active');
     });
 
+    //single page
+
     // $('.xzoom5, .xzoom-gallery5').xzoom({tint: '#006699', Xoffset: 15});
     // $('.xzoom3, .xzoom-gallery3').xzoom({position: 'lens', lensShape: 'circle', sourceClass: 'xzoom-hidden'});
     $('.xzoom3, .xzoom-gallery3').xzoom({position: 'lens', lensShape: 'circle', bg:true, sourceClass: 'xzoom-hidden'});
+
+
+    $('#review .quick-reply').hide();
+    $('.js-quick-reply').on('click', function () {
+        console.log('ok');
+        var p = $(this).parents('.info');
+        p.children('.quick-reply').slideDown();
+    });
+    $('#review .js-quick-reply-hide').on('click', function(){
+        $(this).parent().slideUp();
+    });
 });
