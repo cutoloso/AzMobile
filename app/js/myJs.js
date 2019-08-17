@@ -128,18 +128,20 @@ $(document).ready(function () {
     });
 
     $('.quantity-minus').click(function () {
-        let value_min = parseInt($('.input-qty').data('min'));
-        let value_step = parseInt($('.input-qty').data('step'));
-        let value = parseInt($('.input-qty').val());
+        let parent = $(this).parents('.input-group');
+        let value_min = parseInt(parent.children('.input-qty').data('min'));
+        let value_step = parseInt(parent.children('.input-qty').data('step'));
+        let value = parseInt(parent.children('.input-qty').val());
         if (value > value_min) {
-            $('.input-qty').val(value - value_step);
+            parent.children('.input-qty').val(value - value_step);
         }
     });
 
     $('.quantity-plus').click(function () {
-        let value_step = parseInt($('.input-qty').data('step'));
-        let value = parseInt($('.input-qty').val());
-        $('.input-qty').val(value + value_step);
+        let parent = $(this).parents('.input-group');
+        let value_step = parseInt(parent.children('.input-qty').data('step'));
+        let value = parseInt(parent.children('.input-qty').val());
+        parent.children('.input-qty').val(value + value_step);
     });
 
     var background_thumb = $("div.image-zoom:last div.thumbnail").css('background-image');
@@ -172,14 +174,22 @@ $(document).ready(function () {
     // $('.xzoom3, .xzoom-gallery3').xzoom({position: 'lens', lensShape: 'circle', sourceClass: 'xzoom-hidden'});
     $('.xzoom3, .xzoom-gallery3').xzoom({position: 'lens', lensShape: 'circle', bg:true, sourceClass: 'xzoom-hidden'});
 
-
+// hide/show box reply on single-product
     $('#review .quick-reply').hide();
-    $('.js-quick-reply').on('click', function () {
-        console.log('ok');
-        var p = $(this).parents('.info');
+    $('#review .js-quick-reply').on('click', function () {
+        let p = $(this).parents('.info');
         p.children('.quick-reply').slideDown();
     });
     $('#review .js-quick-reply-hide').on('click', function(){
         $(this).parent().slideUp();
+    });
+// hide/show box edit info ship on shipping
+    $('#shipping .shipping-edit-address').hide();
+    $('#shipping .js-edit-address').on('click', function () {
+        let p = $(this).parents('.shipping-details');
+        p.children('.shipping-edit-address').slideDown();
+    });
+    $('#shipping .js-shipping-edit-hide').on('click', function(){
+        $(this).parents('.shipping-edit-address').slideUp();
     });
 });

@@ -209,92 +209,158 @@
     </div>
 </section>
 
-<section id="cart">
+<section id="shipping">
     <div class="container">
-        <div class="row" style="display: none">
-            <div class="col-12">
-                <div class="alert alert-danger">Mã giảm giá "DFSQAFDAD" không hợp lệ (chương trình khuyến mãi tương ứng không tồn tại)</div>
+        <div class="row">
+            <div class="col-12 shipping-title">
+                Xác nhận địa chỉ giao hàng
             </div>
         </div>
         <div class="row">
-            <div class="col-12 title-header">
-                Giỏ hàng <span>(2 sản phẩm)</span>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-9 cart-info">
-                <div class="row cart-items">
-                    <div class="col-2 img-thumb">
-                        <img src="images/nokia-81-blue-18thangbh-400x460.png" alt="" class="img-responsive">
-                    </div>
-                    <div class="col-10 info">
-                        <div class="box-info-product">
-                            <div class="col-left">
-                                <div class="name">Điện Thoại Nokia 8.1 (Blue) - Hàng Chính Hãng</div>
-                                <div class="brand">Nhãn hiệu: <span>Nokia</span></div>
-                                <div class="action">
-                                    <button class="btn btn-danger">Xóa</button>
-                                </div>
+            <div class="col-12 shipping-details">
+                <p>Chọn địa chỉ giao hàng có sẵn hoặc chỉnh sửa địa chỉ mặc định:</p>
+                <div class="shipping-box-info">
+                    <span class="label">Họ và tên:</span><p class="custommer-name">Đinh Công Thành</p>
+                    <span class="label">Địa chỉ: </span><p>152, đường 3/2, Phường Xuân Khánh, Quận Ninh Kiều, Cần Thơ Việt Nam</p>
+                    <span class="label">Điện thoại: </span><p>0357747883</p>
+                    <span class="label">Email: </span><p>thanhb1507159@student.ctu.edu.vn</p>
+                    <p><button class="btn btn-accept-address">Giao đến địa chỉ này</button> <button class="btn btn-edit js-edit-address">Chỉnh sửa</button></p>
+                </div>
+                <div class="shipping-edit-address">
+                    <form action="">
+                        <div class="form-group">
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" id="sex" name="sex" value="1" checked>Anh
+                                </label>
                             </div>
-                            <div class="col-right">
-                                <div class="box-price">
-                                    <div class="price-sale">5.650.000 ₫</div>
-                                    <div class="primary-price">8.990.000 ₫
-                                        <span class="sale">-37%</span>
-                                    </div>
-                                </div>
-                                <div class="box-quatity input-group">
-                                    <span><button class="btn quantity-minus">-</button></span>
-                                    <input class="input-qty" type="text" value="1" data-min="1" readonly data-step="1">
-                                    <span><button class="btn quantity-plus">+</button></span>
-                                </div>
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" id="sex2" name="sex" value="0">Chị
+                                </label>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row cart-items">
-                    <div class="col-2 img-thumb">
-                        <img src="images/nokia-61-plus-3-400x460.png" alt="" class="img-responsive">
-                    </div>
-                    <div class="col-10 info">
-                        <div class="box-info-product">
-                            <div class="col-left">
-                                <div class="name">Điện thoại Nokia 6.1 Plus - Hàng Chính Hãng - Black</div>
-                                <div class="brand">Nhãn hiệu: <span>Nokia</span></div>
-                                <div class="action">
-                                    <button class="btn btn-danger">Xóa</button>
-                                </div>
-                            </div>
-                            <div class="col-right">
-                                <div class="box-price">
-                                    <div class="price-sale">3.390.000 ₫</div>
-                                    <div class="primary-price">6.590.000 ₫
-                                        <span class="sale">-49%</span>
-                                    </div>
-                                </div>
-                                <div class="box-quatity input-group">
-                                    <span><button class="btn quantity-minus">-</button></span>
-                                    <input class="input-qty" type="text" value="1" data-min="1" readonly data-step="1">
-                                    <span><button class="btn quantity-plus">+</button></span>
-                                </div>
-                            </div>
+                        <div class="form-group">
+                            <label for="name">Họ & tên:</label>
+                            <input type="text" class="form-control" id="name">
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="cart-price">
-                    <div class="total-price">
-                        <span class="label">Tổng: </span> 9.040.000 ₫
-                    </div>
-                </div>
-                <div class="btn btn-danger btn-checkout"><a href="shipping.html">Tiến hành đặt hàng</a></div>
-                <div class="code-sale" style="display: none">
-                    <div class="title">Mã giảm giá / Quà tặng</div>
-                    <div class="input-group">
-                        <input type="text">
-                        <span><button class="btn">Đồng ý</button></span>
-                    </div>
+                        <div class="form-group">
+                            <label >Điện thoại di động:</label>
+                            <input type="text" class="form-control" id="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Địa chỉ Email:</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label>Tỉnh/Thành phố:</label>
+                            <select class="form-control" id="region">
+                                <option value="">Chọn Tỉnh/Thành phố</option>
+                                <option value="294">Hồ Chí Minh</option>
+                                <option value="297">Hà Nội</option>
+                                <option value="291">Đà Nẵng</option>
+                                <option value="278">An Giang</option>
+                                <option value="280">Bà Rịa - Vũng Tàu</option>
+                                <option value="282">Bắc Giang</option>
+                                <option value="281">Bắc Kạn</option>
+                                <option value="279">Bạc Liêu</option>
+                                <option value="283">Bắc Ninh</option>
+                                <option value="284">Bến Tre</option>
+                                <option value="285">Bình Dương</option>
+                                <option value="286">Bình Phước</option>
+                                <option value="287">Bình Thuận</option>
+                                <option value="316">Bình Định</option>
+                                <option value="289">Cà Mau</option>
+                                <option value="290" selected="">Cần Thơ</option>
+                                <option value="288">Cao Bằng</option>
+                                <option value="293">Gia Lai</option>
+                                <option value="295">Hà Giang</option>
+                                <option value="296">Hà Nam</option>
+                                <option value="299">Hà Tĩnh</option>
+                                <option value="300">Hải Dương</option>
+                                <option value="301">Hải Phòng</option>
+                                <option value="319">Hậu Giang</option>
+                                <option value="302">Hoà Bình</option>
+                                <option value="320">Hưng Yên</option>
+                                <option value="321">Khánh Hòa</option>
+                                <option value="322">Kiên Giang</option>
+                                <option value="323">Kon Tum</option>
+                                <option value="304">Lai Châu</option>
+                                <option value="306">Lâm Đồng</option>
+                                <option value="305">Lạng Sơn</option>
+                                <option value="324">Lào Cai</option>
+                                <option value="325">Long An</option>
+                                <option value="326">Nam Định</option>
+                                <option value="327">Nghệ An</option>
+                                <option value="307">Ninh Bình</option>
+                                <option value="328">Ninh Thuận</option>
+                                <option value="329">Phú Thọ</option>
+                                <option value="308">Phú Yên</option>
+                                <option value="309">Quảng Bình</option>
+                                <option value="310">Quảng Nam</option>
+                                <option value="311">Quảng Ngãi</option>
+                                <option value="330">Quảng Ninh</option>
+                                <option value="312">Quảng Trị</option>
+                                <option value="313">Sóc Trăng</option>
+                                <option value="331">Sơn La</option>
+                                <option value="332">Tây Ninh</option>
+                                <option value="333">Thái Bình</option>
+                                <option value="334">Thái Nguyên</option>
+                                <option value="335">Thanh Hóa</option>
+                                <option value="303">Thừa Thiên Huế</option>
+                                <option value="336">Tiền Giang</option>
+                                <option value="314">Trà Vinh</option>
+                                <option value="315">Tuyên Quang</option>
+                                <option value="337">Vĩnh Long</option>
+                                <option value="338">Vĩnh Phúc</option>
+                                <option value="339">Yên Bái</option>
+                                <option value="292">Đắk Lắk</option>
+                                <option value="340">Đắk Nông</option>
+                                <option value="341">Điện Biên</option>
+                                <option value="317">Đồng Nai</option>
+                                <option value="318">Đồng Tháp</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label >Quận/Huyện:</label>
+                            <select class="form-control" id="city">
+                                <option value="">Chọn Quận/Huyện</option>
+                                <option value="559">Huyện Cờ Đỏ</option>
+                                <option value="560">Huyện Phong Điền</option>
+                                <option value="561">Quận Ô Môn</option>
+                                <option value="562">Quận Cái Răng</option>
+                                <option value="563">Quận Bình Thuỷ</option>
+                                <option value="564" selected="">Quận Ninh Kiều</option>
+                                <option value="565">Quận Thốt Nốt</option>
+                                <option value="566">Huyện Vĩnh Thạnh</option>
+                                <option value="702">Huyện Thới Lai</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label >Phường/Xã:</label>
+                            <select class="form-control" id="ward">
+                                <option value="">Chọn Phường/Xã</option>
+                                <option value="1625">Phường An Bình</option>
+                                <option value="1626">Phường An Cư</option>
+                                <option value="1627">Phường An Hòa</option>
+                                <option value="1628">Phường An Hội</option>
+                                <option value="1629">Phường An Khánh</option>
+                                <option value="1630">Phường An Lạc</option>
+                                <option value="1631">Phường An Nghiệp</option>
+                                <option value="1632">Phường An Phú</option>
+                                <option value="1633">Phường Cái Khế</option>
+                                <option value="1634">Phường Hưng Lợi</option>
+                                <option value="1635">Phường Tân An</option>
+                                <option value="1636">Phường Thới Bình</option>
+                                <option value="1637" selected="">Phường Xuân Khánh</option>
+                            </select>
+                        </div>
+
+                        <p>
+                            <div class="btn btn-cancel js-shipping-edit-hide">Hủy bỏ</div>
+                            <button type="submit" class="btn btn-update">Cập nhật</button>
+                        </p>
+                    </form>
                 </div>
             </div>
         </div>
